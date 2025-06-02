@@ -1,0 +1,6 @@
+_id,name,email,spend,phone,address,lastActiveDays,createdAt,visits,orders
+60f5a3c6f1a7c9001c3e1a11,John Doe,john.doe@example.com,15000,9876543210,"123 Elm St, Cityville",10,2023-05-01T08:30:00.000Z,3,"""64fcde08c51b7e4b2b1a1a01,64fcde08c51b7e4b2b1a1a02"""
+60f5a3c6f1a7c9001c3e1a12,Jane Smith,jane.smith@example.com,8000,9123456780,"456 Oak St, Townsville",45,2023-04-25T12:15:00.000Z,1,"""64fcde08c51b7e4b2b1a1a02,64fcde08c51b7e4b2b1a1a04"""
+60f5a3c6f1a7c9001c3e1a13,Emily Johnson,emily.johnson@example.com,20000,9988776655,"789 Pine St, Village",5,2023-06-10T09:00:00.000Z,2,"""64fcde08c51b7e4b2b1a1a07,64fcde08c51b7e4b2b1a1a00"""
+60f5a3c6f1a7c9001c3e1a14,Michael Brown,michael.brown@example.com,5000,9001122334,"321 Maple St, Hamlet",90,2023-01-15T16:45:00.000Z,4,"""64fcde08c51b7e4b2b1a1a31,64fcde08c51b7e4b2b1a1a92"""
+60f5a3c6f1a7c9001c3e1a15,Linda Davis,linda.davis@example.com,12000,9112233445,"654 Birch St, Metro",30,2023-03-20T11:20:00.000Z,5,"""64fcde08c51b7e4b8b1a1a01,64fcde08c51b7e4b2b1a1a42"""

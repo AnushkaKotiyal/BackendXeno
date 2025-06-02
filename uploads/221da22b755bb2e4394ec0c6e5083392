@@ -1,0 +1,6 @@
+customer,orderDate,items,totalAmount,status
+60f5a3c6f1a7c9001c3e1a11,2023-06-20T10:00:00.000Z,"[{""productName"":""Laptop"",""quantity"":1,""price"":15000}]",15000,Delivered
+60f5a3c6f1a7c9001c3e1a12,2023-05-15T14:30:00.000Z,"[{""productName"":""Headphones"",""quantity"":2,""price"":4000}]",8000,Shipped
+60f5a3c6f1a7c9001c3e1a13,2023-06-18T09:15:00.000Z,"[{""productName"":""Smartphone"",""quantity"":1,""price"":20000}]",20000,Processing
+60f5a3c6f1a7c9001c3e1a14,2023-02-10T13:00:00.000Z,"[{""productName"":""Tablet"",""quantity"":1,""price"":5000}]",5000,Cancelled
+60f5a3c6f1a7c9001c3e1a15,2023-04-22T11:45:00.000Z,"[{""productName"":""Monitor"",""quantity"":3,""price"":4000}]",12000,Pending

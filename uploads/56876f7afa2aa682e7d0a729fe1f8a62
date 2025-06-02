@@ -1,0 +1,2 @@
+name,email,spend,phone,address,lastActiveDays,createdAt,visits,orders
+John Doe,john.doe@example.com,15000,9876543210,"123 Elm St, Cityville",10,2023-05-01T08:30:00.000Z,3,"64fcde08c51b7e4b2b1a1a01,64fcde08c51b7e4b2b1a1a02"

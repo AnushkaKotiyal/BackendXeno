@@ -1,0 +1,6 @@
+customer,orderDate,items,totalAmount,status
+alice@example.com,12-01-2025,"[{""productName"":""Laptop"",""quantity"":1,""price"":1200},{""productName"":""Mouse"",""quantity"":1,""price"":25}]",1225,Delivered
+bob@example.com,20-02-2025,"[{""productName"":""Phone Case"",""quantity"":2,""price"":15},{""productName"":""Screen Protector"",""quantity"":1,""price"":10}]",40,Shipped
+charlie@example.com,05-03-2025,"[{""productName"":""Keyboard"",""quantity"":1,""price"":45}]",45,Processing
+diana@example.com,08-04-2025,"[{""productName"":""Monitor"",""quantity"":2,""price"":200},{""productName"":""HDMI Cable"",""quantity"":1,""price"":15}]",415,Cancelled
+emily@example.com,01-05-2025,"[{""productName"":""Tablet"",""quantity"":1,""price"":300},{""productName"":""Stylus"",""quantity"":1,""price"":40}]",340,Pending
