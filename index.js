@@ -34,9 +34,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, "../frontend/my-project/dist")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/my-project/dist/index.html"));
-});
+
 
 
 app.use('/user',userRouter);
@@ -52,6 +50,9 @@ app.get('/',(req,res)=>{
         OperationCode:200
     })
 })
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/my-project/dist/index.html"));
+});
 app.listen(process.env.PORT||3000,()=>{
     console.log(`Server listning on Port ${process.env.PORT}`)
 }) 
