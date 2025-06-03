@@ -3,6 +3,7 @@ const app=express();
 const cors=require('cors');
 const passport=require('passport');
 const dbConnect=require('./Config/database');
+const path = require("path");
 const session = require('express-session'); 
 const cookieParser = require('cookie-parser');
 require('./passport');
