@@ -18,6 +18,7 @@ const createCampaign = async (req, res) => {
       imageUrl,
     } = req.body;
     const userId = req.user.id; 
+    const token=req.cookies.token;
     if (
       !name ||
       !message ||
@@ -64,16 +65,19 @@ const createCampaign = async (req, res) => {
       campaignId: campaign._id,
       total: customers.length,
       status: "Pending",
-      userId
+      userId,
     });
     customers.forEach((c) => {
       const msg = `Hi ${c.name}, ${message}`;
+      console.log("Token sent to vendor API:", token);
       sendViaVendorAPI({
         logId: log._id,
         campaignId: campaign._id,
         customerId: c._id,
         message: msg,
-        userId
+        userId,
+        token
+        
       });
     });
 

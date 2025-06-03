@@ -1,0 +1,6 @@
+name,email,spend,visits,lastActiveDays
+Alice Smith,alice@example.com,1500,5,10
+Bob Johnson,bob@example.com,600,3,20
+Charlie Brown,charlie@example.com,300,2,30
+Diana Ross,diana@example.com,800,4,5
+Emily Clark,emily@example.com,900,6,2

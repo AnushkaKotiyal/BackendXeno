@@ -4,6 +4,7 @@ const cors=require('cors');
 const passport=require('passport');
 const dbConnect=require('./Config/database');
 const session = require('express-session'); 
+const cookieParser = require('cookie-parser');
 require('./passport');
 const userRouter=require('./Routes/userRoutes');
 const customerRouter=require('./Routes/customerRoutes');
@@ -16,6 +17,7 @@ app.use(cors({
   origin: process.env.CLIENT_URL, 
   credentials: true
 }));
+app.use(cookieParser()); 
 app.use(express.json());
 app.use(session({
     secret: process.env.SESSION_SECRET || "Anushka", 
