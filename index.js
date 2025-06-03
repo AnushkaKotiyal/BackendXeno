@@ -36,7 +36,8 @@ app.use(express.static(path.join(__dirname, "../frontend/my-project/dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/my-project/dist/index.html"));
-}); 
+});
+
 
 app.use('/user',userRouter);
 app.use('/customers',customerRouter);
