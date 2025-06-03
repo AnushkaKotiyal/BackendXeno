@@ -14,7 +14,7 @@ const campaignRouter = require('./Routes/campaignRoutes');
 const communicationRouter = require('./Routes/communicationRoutes');
 dbConnect();
 app.use(cors({
-  origin: process.env.CLIENT_URL, 
+  origin: "https://frontend-xeno-urwi.vercel.app", 
   credentials: true
 }));
 app.use(cookieParser()); 
