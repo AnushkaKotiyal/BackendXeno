@@ -32,7 +32,11 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(express.static(path.join(__dirname, "client", "dist"))); // or wherever build files are
+app.use(express.static(path.join(__dirname, "../frontend/my-project/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/my-project/dist/index.html"));
+}); // or wherever build files are
 
 // Fallback: redirect all unknown routes to index.html
 app.get("*", (req, res) => {
