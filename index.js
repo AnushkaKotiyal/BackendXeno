@@ -36,12 +36,8 @@ app.use(express.static(path.join(__dirname, "../frontend/my-project/dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/my-project/dist/index.html"));
-}); // or wherever build files are
+}); 
 
-// Fallback: redirect all unknown routes to index.html
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
-});
 app.use('/user',userRouter);
 app.use('/customers',customerRouter);
 app.use('/segments', segmentationRouter);
