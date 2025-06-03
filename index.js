@@ -31,6 +31,12 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(express.static(path.join(__dirname, "client", "dist"))); // or wherever build files are
+
+// Fallback: redirect all unknown routes to index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+});
 app.use('/user',userRouter);
 app.use('/customers',customerRouter);
 app.use('/segments', segmentationRouter);
