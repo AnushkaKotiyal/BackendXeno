@@ -50,9 +50,11 @@ app.get('/',(req,res)=>{
         OperationCode:200
     })
 })
-app.get("*", (req, res) => {
+// Only serve frontend for non-API routes
+app.get(/^\/(?!api|user|customers|segments|orders|campaigns|comm).*$/, (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/my-project/dist/index.html"));
 });
+
 app.listen(process.env.PORT||3000,()=>{
     console.log(`Server listning on Port ${process.env.PORT}`)
 }) 
